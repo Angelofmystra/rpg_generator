@@ -499,8 +499,6 @@ def alchemical_weapon_tactics():
 	if r == 7: return "tanglefoot bag"
 	if r == 8: return "tangleburn bag"
 
-def 
-
 ######################################################
 
 #number_of_rooms = raw_input("How many rooms?")
