@@ -11,6 +11,8 @@ def rolld20():
 	return random.randint(1,20)
 def rolld24():
 	return random.randint(1,24)
+def rolld50():
+	return random.randint(1,50)
 def rolld75():
 	return random.randint(1,75)
 def rolld100():
@@ -400,7 +402,7 @@ def town_generator():
 	# dangers (supernatural, mundane, )
 	# government (feudal, council, secret council, eccliastical, colonial, dynasty, magical, military, syndicate )
 	# notables (wealthy, powerful adventurers, bureaucrats, nobles)
-	# law (vigilance of guard, lawfulness of citizens, )
+	# law (vigilance of guard (response time), lawfulness of citizens, )
 	# spellcasting (commoner approach to mages, magic laws, criminal mages, wizard towers / organisations, mythals, )
 	# markets (taxation, supply/demand, black market)
 	# notable history
@@ -408,6 +410,51 @@ def town_generator():
 	# interesting events (tournaments, celebrations, holidays, )
 	# adventure sites (mountain, sewers, aqueducts, city of the dead, underwater ruins, ruins, )
 	# architecture
+	# commoners are...:
+	# # well educated
+	# # suspicious and insular
+	# # 
+
+def routes_to_major_settlement():
+	# distance (days walk, days on horseback, days)
+	# # 24 miles walking, 40 miles on horseback
+	# # 120 miles travel is 5 days walking, 3 days by horse
+	# # if the players walk, and buy no extra rations, that is all of their rations gone
+	# # survival is x2 time taken
+	# danger (bandits, monsters, foreign forces)
+	# type (land, water, air)
+	# secret routes
+	# # side roads or waterways (faster or less risky or less attention)
+	# # forest side route (less attention, slower)
+	# # dungeon / caverns (avoid notice, riskier)
+	# # flying (avoid natural terrain, so faster, but people may see you)
+
+#incomplete
+def scenic_spots():
+	r = rolld50()
+	if r == 1: return "A tumbling waterfall cascades into a deep pool."
+	if r == 2: return "A bent willow tree provides shelter."
+	if r == 3: return "A ruined bridge is carved with dancing angels."
+	if r == 4: return "A quaint wishing-well."
+	if r == 5: return "A limestone gorge filled with ancient trees."
+	if r == 6: return "A lone tree upon a moor."
+	if r == 7: return "Mighty stones have weathered into incredible shapes."
+	if r == 8: return "Carved millstones lie abandonned in a flower meadow."
+	if r == 9: return "A stone outcropping that looks like a dragon."
+	if r == 10: return "The ruins of a once majestic manor house."
+	if r == 11: return "A crumbling hillside."
+	if r == 12: return "A farmed valley with lush grass."
+	if r == 13: return "The still waters of a pool reflect an ancient dolmen."
+	if r == 14: return "A natural tower of broken, weathered stone."
+	if r == 15: return "Sunlight suddenly strikes the purple heather."
+	if r == 16: return "The sun picks out a hillside in a blaze of colour."
+	if r == 17: return "A ruined croft with the chimney still intact."
+	if r == 18: return "A crumbling gatepost leading to a ruined croft."
+	if r == 19: return "A cobbled track worn smooth with age."
+	if r == 20: return "A standing stone in hallow."
+	if r == 21: return "Curious weathered stones tumble down the hillside."
+	if r == 22: return "An old ruined chapel wreathed in ivy."
+	if r == 23: return "A shallow cave with a moss-covered floor."
 
 def reputation_or_personality():
 	r = rolld26()
@@ -437,6 +484,22 @@ def reputation_or_personality():
 	if r == 24: return "suspicious"
 	if r == 25: return "valorous"
 	if r == 26: return "cowardly"
+
+######################################################
+
+def alchemical_weapon_tactics():
+	# I am only including ones that provide a notably unique effect
+	r = rolld8()
+	if r == 1: return "alchemist's fire"
+	if r == 2: return "flash powder"
+	if r == 3: return "ghost retch flask"
+	if r == 4: return "itching powder"
+	if r == 5: return "pellet grenade"
+	if r == 6: return "thunderstone"
+	if r == 7: return "tanglefoot bag"
+	if r == 8: return "tangleburn bag"
+
+def 
 
 ######################################################
 
